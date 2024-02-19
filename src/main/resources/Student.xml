@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<bean id="myStudent" class="org.jsp.SpringPractice.Student">
+		<property name="id" value="001"></property>
+		<property name="name" value="Saurabh"></property>
+		<property name="phone" >
+		   <list> 
+		     <value>987654316</value>
+		     <value>785948398</value>
+		     <value>876543863</value>
+		   </list>
+		 </property>
+		<property name="address">
+		   <set> 
+		   
+		   <value>MUZAFFARPUR</value>
+		   <value>VAISHALI</value>
+		   <value>PATNA</value>
+		   </set>
+		 </property>
+	</bean>
+</beans>
